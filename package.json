@@ -1,0 +1,24 @@
+{
+  "name": "ProjetoFinal-WebII",
+  "version": "1.0.0",
+  "description": "Aplicação de Hotel Front e Back",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanessa-Helena/ProjetoFinal-WebII.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vanessa-Helena/ProjetoFinal-WebII/issues"
+  },
+  "homepage": "https://github.com/Vanessa-Helena/ProjetoFinal-WebII#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

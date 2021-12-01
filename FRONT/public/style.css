@@ -1,3 +1,13 @@
-body {
-    background-color: aliceblue;
+#telaLogin {
+    width: 350;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 30px rgb(195, 195,195);
+    opacity: 0,7;
+}
+
+#fundo {
+    background-color: rgb(243, 243, 243);
 }

@@ -20,6 +20,10 @@ app.get('/login', (req, res)=>{
     res.render('login.ejs');
 });
 
+app.get('/cadastro', (req, res)=>{
+    res.render('insert.ejs');
+});
+
 
 app.listen(3003, ()=>{
     console.log("Servidor ativo na porta 3003");

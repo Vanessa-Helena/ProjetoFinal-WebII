@@ -16,7 +16,15 @@ const Usuario = require('./usuario')
 
 app.get('/', (req, res) => {
   res.render('home')
-})
+});
+
+app.get('/login', (req, res)=>{
+  res.render('login.ejs');
+});
+
+app.get('/cadastro', (req, res)=>{
+  res.render('insert_user.ejs');
+});
 
 // Usuario Endpoints
 app.post('/usuario/add', (req, res) => {
@@ -32,7 +40,7 @@ app.post('/usuario/add', (req, res) => {
     res.status(200).json(result)
   })
   console.log("bateu")
-})
+});
 
 app.get('/usuario/read', (req, res) => {
   const data = req.body
@@ -41,7 +49,7 @@ app.get('/usuario/read', (req, res) => {
   u.read(cpf).then(function(result){
     res.status(200).json(result)
   })
-})
+});
 
 app.put('/usuario/update', (req, res) => {
   const data = req.body
@@ -55,7 +63,7 @@ app.put('/usuario/update', (req, res) => {
   u.update(nome, cpf, email, telefone, senha, data_nasc).then(function(result){
     res.status(200).json(result)
   })
-})
+});
 
 app.delete('/usuario/delete', (req, res) => {
   const data = req.body
@@ -64,7 +72,7 @@ app.delete('/usuario/delete', (req, res) => {
   u.delete(cpf).then(function(result){
     res.status(200).json(result)
   })
-})
+});
 /*
 usuario/login --  POST
  parametros:

@@ -1,10 +1,10 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : '127.0.0.1',
-  user     : 'usuario',
-  password : 'teste',
+  user     : 'root',
+  password : 'password',
   port     : '3306',
-  database : 'hotel'
+  database : 'database_development'
 });
 
 class Db{
@@ -16,10 +16,10 @@ class Db{
   createconn(){
     this.mysql.createConnection({
       host     : '127.0.0.1',
-      user     : 'usuario',
-      password : 'teste',
+      user     : 'root',
+      password : 'password',
       port     : '3306',
-      database : 'hotel'
+      database : 'database_development'
     })
   }
   insert(s){

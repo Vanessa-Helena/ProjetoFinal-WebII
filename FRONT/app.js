@@ -22,8 +22,12 @@ app.get('/login', (req, res)=>{
   res.render('login.ejs');
 });
 
-app.get('/cadastro', (req, res)=>{
+app.get('/cadastro/usuario', (req, res)=>{
   res.render('insert_user.ejs');
+});
+
+app.get('/cadastro/reserva', (req, res)=>{
+  res.render('insert_reserva.ejs');
 });
 
 // Usuario Endpoints
